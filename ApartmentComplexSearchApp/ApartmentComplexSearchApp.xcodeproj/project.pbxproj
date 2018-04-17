@@ -13,6 +13,24 @@
 		2CE5D47C20811EF100E559D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D47B20811EF100E559D5 /* Assets.xcassets */; };
 		2CE5D47F20811EF100E559D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D47D20811EF100E559D5 /* LaunchScreen.storyboard */; };
 		2CE5D48220811EF100E559D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D48120811EF100E559D5 /* main.m */; };
+		2CE5D48A2081238D00E559D5 /* NavigationGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4892081238D00E559D5 /* NavigationGradientView.m */; };
+		2CE5D48E208390C600E559D5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D48D208390C600E559D5 /* DataManager.m */; };
+		2CE5D4932083A2A500E559D5 /* ApartmentListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4922083A2A400E559D5 /* ApartmentListRequest.m */; };
+		2CE5D4AE2083A6E500E559D5 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4992083A6E500E559D5 /* JSONValueTransformer.m */; };
+		2CE5D4AF2083A6E500E559D5 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D49C2083A6E500E559D5 /* JSONKeyMapper.m */; };
+		2CE5D4B02083A6E500E559D5 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D49E2083A6E500E559D5 /* JSONModel.m */; };
+		2CE5D4B12083A6E500E559D5 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D49F2083A6E500E559D5 /* JSONModelError.m */; };
+		2CE5D4B22083A6E500E559D5 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4A22083A6E500E559D5 /* JSONModelClassProperty.m */; };
+		2CE5D4B32083A6E500E559D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4A52083A6E500E559D5 /* Info.plist */; };
+		2CE5D4B42083A6E500E559D5 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4A82083A6E500E559D5 /* JSONHTTPClient.m */; };
+		2CE5D4B52083A6E500E559D5 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4A92083A6E500E559D5 /* JSONAPI.m */; };
+		2CE5D4B62083A6E500E559D5 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4AD2083A6E500E559D5 /* JSONModel+networking.m */; };
+		2CE5D4B92083A8DE00E559D5 /* Apartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4B82083A8DE00E559D5 /* Apartment.m */; };
+		2CE5D4BC2083BDCE00E559D5 /* DataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4BB2083BDCE00E559D5 /* DataResponse.m */; };
+		2CE5D4C020866B7000E559D5 /* ApartmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4BE20866B7000E559D5 /* ApartmentTableViewCell.m */; };
+		2CE5D4C120866B7000E559D5 /* ApartmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4BF20866B7000E559D5 /* ApartmentTableViewCell.xib */; };
+		2CE5D4C720868AD800E559D5 /* LoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4C520868AD800E559D5 /* LoadMoreTableViewCell.m */; };
+		2CE5D4C820868AD800E559D5 /* LoadMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4C620868AD800E559D5 /* LoadMoreTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,47 @@
 		2CE5D47E20811EF100E559D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CE5D48020811EF100E559D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CE5D48120811EF100E559D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CE5D4882081238D00E559D5 /* NavigationGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationGradientView.h; sourceTree = "<group>"; };
+		2CE5D4892081238D00E559D5 /* NavigationGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationGradientView.m; sourceTree = "<group>"; };
+		2CE5D48C208390C600E559D5 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		2CE5D48D208390C600E559D5 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		2CE5D48F2083916D00E559D5 /* DataManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagerDelegate.h; sourceTree = "<group>"; };
+		2CE5D4912083A2A400E559D5 /* ApartmentListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentListRequest.h; sourceTree = "<group>"; };
+		2CE5D4922083A2A400E559D5 /* ApartmentListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApartmentListRequest.m; sourceTree = "<group>"; };
+		2CE5D4942083A2F100E559D5 /* DataRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRequestProtocol.h; sourceTree = "<group>"; };
+		2CE5D4952083A30300E559D5 /* DataRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRequestDelegate.h; sourceTree = "<group>"; };
+		2CE5D4992083A6E500E559D5 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		2CE5D49A2083A6E500E559D5 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		2CE5D49B2083A6E500E559D5 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		2CE5D49C2083A6E500E559D5 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		2CE5D49E2083A6E500E559D5 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		2CE5D49F2083A6E500E559D5 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		2CE5D4A02083A6E500E559D5 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		2CE5D4A12083A6E500E559D5 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		2CE5D4A22083A6E500E559D5 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		2CE5D4A32083A6E500E559D5 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		2CE5D4A42083A6E500E559D5 /* JSONModel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JSONModel.modulemap; sourceTree = "<group>"; };
+		2CE5D4A52083A6E500E559D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE5D4A62083A6E500E559D5 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		2CE5D4A82083A6E500E559D5 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		2CE5D4A92083A6E500E559D5 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		2CE5D4AA2083A6E500E559D5 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		2CE5D4AB2083A6E500E559D5 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		2CE5D4AC2083A6E500E559D5 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		2CE5D4AD2083A6E500E559D5 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		2CE5D4B72083A8DE00E559D5 /* Apartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apartment.h; sourceTree = "<group>"; };
+		2CE5D4B82083A8DE00E559D5 /* Apartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Apartment.m; sourceTree = "<group>"; };
+		2CE5D4BA2083BDCE00E559D5 /* DataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataResponse.h; sourceTree = "<group>"; };
+		2CE5D4BB2083BDCE00E559D5 /* DataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataResponse.m; sourceTree = "<group>"; };
+		2CE5D4BD20866B7000E559D5 /* ApartmentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentTableViewCell.h; sourceTree = "<group>"; };
+		2CE5D4BE20866B7000E559D5 /* ApartmentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApartmentTableViewCell.m; sourceTree = "<group>"; };
+		2CE5D4BF20866B7000E559D5 /* ApartmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApartmentTableViewCell.xib; sourceTree = "<group>"; };
+		2CE5D4C22086862000E559D5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		2CE5D4C3208687D800E559D5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		2CE5D4C420868AD800E559D5 /* LoadMoreTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableViewCell.h; sourceTree = "<group>"; };
+		2CE5D4C520868AD800E559D5 /* LoadMoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableViewCell.m; sourceTree = "<group>"; };
+		2CE5D4C620868AD800E559D5 /* LoadMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreTableViewCell.xib; sourceTree = "<group>"; };
+		2CE5D4C920868C7F00E559D5 /* LoadMoreTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableViewCellDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +121,110 @@
 				2CE5D47320811EEB00E559D5 /* AppDelegate.m */,
 				2CE5D47520811EEB00E559D5 /* ViewController.h */,
 				2CE5D47620811EEB00E559D5 /* ViewController.m */,
+				2CE5D4902083A22B00E559D5 /* DataManagment */,
+				2CE5D48B2081239C00E559D5 /* Views */,
 				2CE5D47820811EEB00E559D5 /* Main.storyboard */,
 				2CE5D47B20811EF100E559D5 /* Assets.xcassets */,
 				2CE5D47D20811EF100E559D5 /* LaunchScreen.storyboard */,
 				2CE5D48020811EF100E559D5 /* Info.plist */,
 				2CE5D48120811EF100E559D5 /* main.m */,
+				2CE5D4C22086862000E559D5 /* Roboto-Medium.ttf */,
+				2CE5D4C3208687D800E559D5 /* Roboto-Bold.ttf */,
+				2CE5D4962083A6C800E559D5 /* Frameworks */,
 			);
 			path = ApartmentComplexSearchApp;
+			sourceTree = "<group>";
+		};
+		2CE5D48B2081239C00E559D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D4BD20866B7000E559D5 /* ApartmentTableViewCell.h */,
+				2CE5D4BE20866B7000E559D5 /* ApartmentTableViewCell.m */,
+				2CE5D4BF20866B7000E559D5 /* ApartmentTableViewCell.xib */,
+				2CE5D4C420868AD800E559D5 /* LoadMoreTableViewCell.h */,
+				2CE5D4C520868AD800E559D5 /* LoadMoreTableViewCell.m */,
+				2CE5D4C620868AD800E559D5 /* LoadMoreTableViewCell.xib */,
+				2CE5D4C920868C7F00E559D5 /* LoadMoreTableViewCellDelegate.h */,
+				2CE5D4882081238D00E559D5 /* NavigationGradientView.h */,
+				2CE5D4892081238D00E559D5 /* NavigationGradientView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CE5D4902083A22B00E559D5 /* DataManagment */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D4B72083A8DE00E559D5 /* Apartment.h */,
+				2CE5D4B82083A8DE00E559D5 /* Apartment.m */,
+				2CE5D48C208390C600E559D5 /* DataManager.h */,
+				2CE5D48D208390C600E559D5 /* DataManager.m */,
+				2CE5D48F2083916D00E559D5 /* DataManagerDelegate.h */,
+				2CE5D4912083A2A400E559D5 /* ApartmentListRequest.h */,
+				2CE5D4922083A2A400E559D5 /* ApartmentListRequest.m */,
+				2CE5D4BA2083BDCE00E559D5 /* DataResponse.h */,
+				2CE5D4BB2083BDCE00E559D5 /* DataResponse.m */,
+				2CE5D4942083A2F100E559D5 /* DataRequestProtocol.h */,
+				2CE5D4952083A30300E559D5 /* DataRequestDelegate.h */,
+			);
+			path = DataManagment;
+			sourceTree = "<group>";
+		};
+		2CE5D4962083A6C800E559D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D4972083A6E500E559D5 /* JSONModel */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CE5D4972083A6E500E559D5 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D4982083A6E500E559D5 /* JSONModelTransformations */,
+				2CE5D49D2083A6E500E559D5 /* JSONModel */,
+				2CE5D4A42083A6E500E559D5 /* JSONModel.modulemap */,
+				2CE5D4A52083A6E500E559D5 /* Info.plist */,
+				2CE5D4A62083A6E500E559D5 /* JSONModelLib.h */,
+				2CE5D4A72083A6E500E559D5 /* JSONModelNetworking */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		2CE5D4982083A6E500E559D5 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D4992083A6E500E559D5 /* JSONValueTransformer.m */,
+				2CE5D49A2083A6E500E559D5 /* JSONKeyMapper.h */,
+				2CE5D49B2083A6E500E559D5 /* JSONValueTransformer.h */,
+				2CE5D49C2083A6E500E559D5 /* JSONKeyMapper.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		2CE5D49D2083A6E500E559D5 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D49E2083A6E500E559D5 /* JSONModel.m */,
+				2CE5D49F2083A6E500E559D5 /* JSONModelError.m */,
+				2CE5D4A02083A6E500E559D5 /* JSONModelClassProperty.h */,
+				2CE5D4A12083A6E500E559D5 /* JSONModel.h */,
+				2CE5D4A22083A6E500E559D5 /* JSONModelClassProperty.m */,
+				2CE5D4A32083A6E500E559D5 /* JSONModelError.h */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		2CE5D4A72083A6E500E559D5 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5D4A82083A6E500E559D5 /* JSONHTTPClient.m */,
+				2CE5D4A92083A6E500E559D5 /* JSONAPI.m */,
+				2CE5D4AA2083A6E500E559D5 /* JSONModel+networking.h */,
+				2CE5D4AB2083A6E500E559D5 /* JSONHTTPClient.h */,
+				2CE5D4AC2083A6E500E559D5 /* JSONAPI.h */,
+				2CE5D4AD2083A6E500E559D5 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE5D4C820868AD800E559D5 /* LoadMoreTableViewCell.xib in Resources */,
+				2CE5D4B32083A6E500E559D5 /* Info.plist in Resources */,
 				2CE5D47F20811EF100E559D5 /* LaunchScreen.storyboard in Resources */,
+				2CE5D4C120866B7000E559D5 /* ApartmentTableViewCell.xib in Resources */,
 				2CE5D47C20811EF100E559D5 /* Assets.xcassets in Resources */,
 				2CE5D47A20811EEB00E559D5 /* Main.storyboard in Resources */,
 			);
@@ -141,8 +300,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE5D4B42083A6E500E559D5 /* JSONHTTPClient.m in Sources */,
+				2CE5D48A2081238D00E559D5 /* NavigationGradientView.m in Sources */,
+				2CE5D4BC2083BDCE00E559D5 /* DataResponse.m in Sources */,
+				2CE5D48E208390C600E559D5 /* DataManager.m in Sources */,
+				2CE5D4B92083A8DE00E559D5 /* Apartment.m in Sources */,
+				2CE5D4AF2083A6E500E559D5 /* JSONKeyMapper.m in Sources */,
+				2CE5D4932083A2A500E559D5 /* ApartmentListRequest.m in Sources */,
+				2CE5D4B62083A6E500E559D5 /* JSONModel+networking.m in Sources */,
+				2CE5D4B22083A6E500E559D5 /* JSONModelClassProperty.m in Sources */,
 				2CE5D47720811EEB00E559D5 /* ViewController.m in Sources */,
+				2CE5D4B52083A6E500E559D5 /* JSONAPI.m in Sources */,
+				2CE5D4C020866B7000E559D5 /* ApartmentTableViewCell.m in Sources */,
+				2CE5D4AE2083A6E500E559D5 /* JSONValueTransformer.m in Sources */,
+				2CE5D4B02083A6E500E559D5 /* JSONModel.m in Sources */,
 				2CE5D48220811EF100E559D5 /* main.m in Sources */,
+				2CE5D4B12083A6E500E559D5 /* JSONModelError.m in Sources */,
+				2CE5D4C720868AD800E559D5 /* LoadMoreTableViewCell.m in Sources */,
 				2CE5D47420811EEB00E559D5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dmitriy.ApartmentComplexSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,7 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dmitriy.ApartmentComplexSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
