@@ -22,37 +22,42 @@
 @property (nonatomic, assign) NSInteger priceFrom;
 @property (nonatomic, assign) NSInteger priceTo;
 
-@property(atomic, assign, readwrite, getter=isExecuting) BOOL executing;
-@property(atomic, assign, readwrite, getter=isFinished) BOOL finished;
-@property(atomic, assign, readwrite, getter=isCancelled) BOOL cancelled;
-
 @end
 
 @implementation ApartmentListRequest
 
-@synthesize delegate, executing, finished, cancelled;
+@synthesize executing = _executing, finished = _finished, delegate;
 
-+ (BOOL)automaticallyNotifiesObserversForKey
+- (BOOL)isAsynchronous
 {
-    return true;
+    return YES;
 }
 
-+ (NSSet *)keyPathsForValuesAffectingIsCancelled
+- (BOOL)isExecuting
 {
-    NSSet *result = [NSSet setWithObject:@"cancelled"];
-    return result;
+    return _executing;
 }
 
-+ (NSSet *)keyPathsForValuesAffectingIsExecuting
+- (BOOL)isFinished
 {
-    NSSet *result = [NSSet setWithObject:@"executing"];
-    return result;
+    return _finished;
 }
 
-+ (NSSet *)keyPathsForValuesAffectingIsFinished
+- (void)setFinished:(BOOL)finished
 {
-    NSSet *result = [NSSet setWithObject:@"finished"];
-    return result;
+    [self willChangeValueForKey:NSStringFromSelector(@selector(isFinished))];
+    _finished = finished;
+    [self didChangeValueForKey:NSStringFromSelector(@selector(isFinished))];
+}
+
+- (void)setExecuting:(BOOL)executing
+{
+    if (_executing != executing)
+    {
+        [self willChangeValueForKey:NSStringFromSelector(@selector(isExecuting))];
+        _executing = executing;
+        [self didChangeValueForKey:NSStringFromSelector(@selector(isExecuting))];
+    }
 }
 
 + (ApartmentListRequest *)initWithShowType:(NSString *)type

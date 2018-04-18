@@ -19,6 +19,7 @@
 
 - (NSArray *)filterByPrice;
 - (NSArray *)filterByState;
+- (NSArray *)filterByMetro;
 
 @property (nonatomic, weak) id<DataManagerDelegate> delegate;
 

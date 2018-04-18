@@ -12,16 +12,20 @@
 #import "ApartmentTableViewCell.h"
 #import "LoadMoreTableViewCell.h"
 #import "LoadMoreTableViewCellDelegate.h"
+#import "FilterView.h"
+#import "FilterViewDelegate.h"
 
 @interface ViewController ()
 <
     UITableViewDelegate,
     UITableViewDataSource,
     DataManagerDelegate,
-    LoadMoreTableViewCellDelegate
+    LoadMoreTableViewCellDelegate,
+    FilterViewDelegate
 >
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet FilterView *filterView;
 
 @property (nonatomic, strong) DataManager *dataManager;
 
@@ -47,6 +51,14 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"ApartmentTableViewCell" bundle:nil]
          forCellReuseIdentifier:@"ApartmentTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"LoadMoreTableViewCell" bundle:nil] forCellReuseIdentifier:@"LoadMoreTableViewCell"];
+    
+    self.filterView.apartmentCount = self.apartmentList.count;
+    self.filterView.delegate = self;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark (Table View)
@@ -110,6 +122,7 @@
 - (void)dataManagerDidLoadData:(NSArray *)data
 {
     self.apartmentList = data;
+    self.filterView.apartmentCount = data.count;
     
     [self.tableView reloadData];
 }
@@ -121,6 +134,31 @@
     self.offset += 10;
     
      [self.dataManager loadDataWithCount:10 offset:self.offset priceFrom:0 priceTo:0];
+}
+
+#pragma mark - FilterViewDelegate
+
+- (void)filterViewFilterChangedTo:(FilterViewType)type
+{
+    switch (type)
+    {
+        case FilterViewTypeByPrice:
+            self.apartmentList = [self.dataManager filterByPrice];
+            break;
+            
+        case FilterViewTypeByState:
+            self.apartmentList = [self.dataManager filterByState];
+            break;
+            
+        case FilterViewTypeByMetro:
+            self.apartmentList = [self.dataManager filterByMetro];
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self.tableView  reloadData];
 }
 
 @end

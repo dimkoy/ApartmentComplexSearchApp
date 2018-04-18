@@ -31,6 +31,12 @@
 		2CE5D4C120866B7000E559D5 /* ApartmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4BF20866B7000E559D5 /* ApartmentTableViewCell.xib */; };
 		2CE5D4C720868AD800E559D5 /* LoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4C520868AD800E559D5 /* LoadMoreTableViewCell.m */; };
 		2CE5D4C820868AD800E559D5 /* LoadMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4C620868AD800E559D5 /* LoadMoreTableViewCell.xib */; };
+		2CE5D4CC2087AA1900E559D5 /* ApartmentPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4CB2087AA1900E559D5 /* ApartmentPrice.m */; };
+		2CE5D4CF2087B78B00E559D5 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4CE2087B78B00E559D5 /* XibView.m */; };
+		2CE5D4D22087BBC200E559D5 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4D12087BBC200E559D5 /* HeaderView.m */; };
+		2CE5D4D42087BBD600E559D5 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4D32087BBD600E559D5 /* HeaderView.xib */; };
+		2CE5D4D72087C09B00E559D5 /* FilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5D4D62087C09B00E559D5 /* FilterView.m */; };
+		2CE5D4D92087C0A500E559D5 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5D4D82087C0A500E559D5 /* FilterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +91,17 @@
 		2CE5D4C520868AD800E559D5 /* LoadMoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableViewCell.m; sourceTree = "<group>"; };
 		2CE5D4C620868AD800E559D5 /* LoadMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreTableViewCell.xib; sourceTree = "<group>"; };
 		2CE5D4C920868C7F00E559D5 /* LoadMoreTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableViewCellDelegate.h; sourceTree = "<group>"; };
+		2CE5D4CA2087AA1900E559D5 /* ApartmentPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentPrice.h; sourceTree = "<group>"; };
+		2CE5D4CB2087AA1900E559D5 /* ApartmentPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApartmentPrice.m; sourceTree = "<group>"; };
+		2CE5D4CD2087B78B00E559D5 /* XibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
+		2CE5D4CE2087B78B00E559D5 /* XibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
+		2CE5D4D02087BBC200E559D5 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		2CE5D4D12087BBC200E559D5 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		2CE5D4D32087BBD600E559D5 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		2CE5D4D52087C09B00E559D5 /* FilterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterView.h; sourceTree = "<group>"; };
+		2CE5D4D62087C09B00E559D5 /* FilterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterView.m; sourceTree = "<group>"; };
+		2CE5D4D82087C0A500E559D5 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		2CE5D4DA2087C5E900E559D5 /* FilterViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +161,15 @@
 				2CE5D4C420868AD800E559D5 /* LoadMoreTableViewCell.h */,
 				2CE5D4C520868AD800E559D5 /* LoadMoreTableViewCell.m */,
 				2CE5D4C620868AD800E559D5 /* LoadMoreTableViewCell.xib */,
+				2CE5D4CD2087B78B00E559D5 /* XibView.h */,
+				2CE5D4CE2087B78B00E559D5 /* XibView.m */,
+				2CE5D4D02087BBC200E559D5 /* HeaderView.h */,
+				2CE5D4D12087BBC200E559D5 /* HeaderView.m */,
+				2CE5D4D32087BBD600E559D5 /* HeaderView.xib */,
+				2CE5D4D52087C09B00E559D5 /* FilterView.h */,
+				2CE5D4D62087C09B00E559D5 /* FilterView.m */,
+				2CE5D4DA2087C5E900E559D5 /* FilterViewDelegate.h */,
+				2CE5D4D82087C0A500E559D5 /* FilterView.xib */,
 				2CE5D4C920868C7F00E559D5 /* LoadMoreTableViewCellDelegate.h */,
 				2CE5D4882081238D00E559D5 /* NavigationGradientView.h */,
 				2CE5D4892081238D00E559D5 /* NavigationGradientView.m */,
@@ -156,6 +182,8 @@
 			children = (
 				2CE5D4B72083A8DE00E559D5 /* Apartment.h */,
 				2CE5D4B82083A8DE00E559D5 /* Apartment.m */,
+				2CE5D4CA2087AA1900E559D5 /* ApartmentPrice.h */,
+				2CE5D4CB2087AA1900E559D5 /* ApartmentPrice.m */,
 				2CE5D48C208390C600E559D5 /* DataManager.h */,
 				2CE5D48D208390C600E559D5 /* DataManager.m */,
 				2CE5D48F2083916D00E559D5 /* DataManagerDelegate.h */,
@@ -288,8 +316,10 @@
 				2CE5D4B32083A6E500E559D5 /* Info.plist in Resources */,
 				2CE5D47F20811EF100E559D5 /* LaunchScreen.storyboard in Resources */,
 				2CE5D4C120866B7000E559D5 /* ApartmentTableViewCell.xib in Resources */,
+				2CE5D4D92087C0A500E559D5 /* FilterView.xib in Resources */,
 				2CE5D47C20811EF100E559D5 /* Assets.xcassets in Resources */,
 				2CE5D47A20811EEB00E559D5 /* Main.storyboard in Resources */,
+				2CE5D4D42087BBD600E559D5 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,16 +330,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE5D4CC2087AA1900E559D5 /* ApartmentPrice.m in Sources */,
 				2CE5D4B42083A6E500E559D5 /* JSONHTTPClient.m in Sources */,
+				2CE5D4D72087C09B00E559D5 /* FilterView.m in Sources */,
 				2CE5D48A2081238D00E559D5 /* NavigationGradientView.m in Sources */,
 				2CE5D4BC2083BDCE00E559D5 /* DataResponse.m in Sources */,
 				2CE5D48E208390C600E559D5 /* DataManager.m in Sources */,
 				2CE5D4B92083A8DE00E559D5 /* Apartment.m in Sources */,
 				2CE5D4AF2083A6E500E559D5 /* JSONKeyMapper.m in Sources */,
+				2CE5D4D22087BBC200E559D5 /* HeaderView.m in Sources */,
 				2CE5D4932083A2A500E559D5 /* ApartmentListRequest.m in Sources */,
 				2CE5D4B62083A6E500E559D5 /* JSONModel+networking.m in Sources */,
 				2CE5D4B22083A6E500E559D5 /* JSONModelClassProperty.m in Sources */,
 				2CE5D47720811EEB00E559D5 /* ViewController.m in Sources */,
+				2CE5D4CF2087B78B00E559D5 /* XibView.m in Sources */,
 				2CE5D4B52083A6E500E559D5 /* JSONAPI.m in Sources */,
 				2CE5D4C020866B7000E559D5 /* ApartmentTableViewCell.m in Sources */,
 				2CE5D4AE2083A6E500E559D5 /* JSONValueTransformer.m in Sources */,

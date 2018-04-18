@@ -51,6 +51,58 @@
     [self.apartmentSearchQueue addOperation:request];
 }
 
+- (NSArray *)filterByState
+{
+    NSArray *sortedArray = [self.apartmentList sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        Apartment *firstApartment = (Apartment *)obj1;
+        Apartment *secondApartment = (Apartment *)obj2;
+        
+        
+        return [firstApartment.state caseInsensitiveCompare:secondApartment.state];
+    }];
+    
+    self.apartmentList = [NSMutableArray arrayWithArray:sortedArray];
+    
+    return sortedArray;
+}
+
+-(NSArray *)filterByPrice
+{
+    NSArray *sortedArray = [self.apartmentList sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        Apartment *firstApartment = (Apartment *)obj1;
+        Apartment *secondApartment = (Apartment *)obj2;
+        
+        if (firstApartment.min_price > secondApartment.min_price)
+        {
+            return NSOrderedDescending;
+        }
+        else if (firstApartment.min_price < secondApartment.min_price)
+        {
+            return NSOrderedAscending;
+        }
+        
+        return NSOrderedSame;
+    }];
+    
+    self.apartmentList = [NSMutableArray arrayWithArray:sortedArray];
+    
+    return sortedArray;
+}
+
+- (NSArray *)filterByMetro
+{
+    NSArray *sortedArray = [self.apartmentList sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        Apartment *firstApartment = (Apartment *)obj1;
+        Apartment *secondApartment = (Apartment *)obj2;
+        
+        return [firstApartment.subwayDistanceTiming compare:secondApartment.subwayDistanceTiming];
+    }];
+    
+    self.apartmentList = [NSMutableArray arrayWithArray:sortedArray];
+    
+    return sortedArray;
+}
+
 #pragma mark - Delegates
 
 - (void)dataRequest:(id<DataRequestProtocol>)request

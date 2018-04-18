@@ -40,5 +40,6 @@
 @property (nonatomic, strong) NSString<Ignore> *nearestSubwayName;
 @property (nonatomic, strong) NSString<Ignore> *subwayDistanceTiming;
 @property (nonatomic, strong) NSString<Ignore> *builderName;
+@property (nonatomic, strong) NSArray<Ignore> *filteredPrices;
 
 @end

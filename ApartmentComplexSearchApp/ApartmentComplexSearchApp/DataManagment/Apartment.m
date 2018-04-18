@@ -7,10 +7,12 @@
 //
 
 #import "Apartment.h"
+#import "ApartmentPrice.h"
 
 @interface Apartment()
 
 @property (nonatomic, strong) NSDictionary<Ignore> *nearestSubway;
+@property (nonatomic, strong) NSArray<Ignore> *prices;
 
 @end
 
@@ -65,6 +67,41 @@
 - (NSString<Ignore> *)builderName
 {
     return [self.builder valueForKey:@"name"];
+}
+
+- (NSArray<Ignore> *)filteredPrices
+{
+    NSMutableArray *prices = [NSMutableArray arrayWithCapacity:self.min_prices.count];
+    
+    for (NSDictionary *object in self.min_prices)
+    {
+        NSError *error = nil;
+        ApartmentPrice *apartment = [[ApartmentPrice alloc] initWithDictionary:object error:&error];
+        
+        [prices addObject:apartment];
+    }
+    
+    self.prices = [NSArray arrayWithArray:prices];
+    
+    NSMutableArray *pricesForRemove = [NSMutableArray array];
+    
+    for (ApartmentPrice *currentPrice in self.prices)
+    {
+        for (ApartmentPrice *comparePrice in prices)
+        {
+            if ([[currentPrice.rooms substringToIndex:1] isEqualToString:[comparePrice.rooms substringToIndex:1]])
+            {
+                if (comparePrice.price > currentPrice.price)
+                {
+                    [pricesForRemove addObject:comparePrice];
+                }
+            }
+        }
+    }
+    
+    [prices removeObjectsInArray:pricesForRemove];
+    
+    return [NSArray arrayWithArray:prices];
 }
 
 #pragma mark - Private (Override methods)
